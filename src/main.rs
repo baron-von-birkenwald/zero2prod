@@ -1,5 +1,3 @@
-#![recursion_limit = "512"]
-
 use secrecy::ExposeSecret;
 use sqlx::postgres::PgPool;
 use std::net::TcpListener;
