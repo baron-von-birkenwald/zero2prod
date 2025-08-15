@@ -284,5 +284,16 @@
         }
       ]
     }
+  },
+  {
+    "session_id": "420bba5b-6f42-4e97-83ac-8bccb15f988a",
+    "transcript_path": "/home/baron-von-birken/.claude/projects/-home-baron-von-birken-workspace-zero2prod/420bba5b-6f42-4e97-83ac-8bccb15f988a.jsonl",
+    "cwd": "/home/baron-von-birken/workspace/zero2prod",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Write",
+    "tool_input": {
+      "file_path": "/home/baron-von-birken/workspace/zero2prod/.dockerignore",
+      "content": "/target\n**/*.rs.bk\n*.pdb\n.git\n.gitignore"
+    }
   }
 ]
