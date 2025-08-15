@@ -1,4 +1,4 @@
-FROM rustlang/rust:nightly
+FROM rust:1.83
 
 WORKDIR /app
 RUN apt update && apt install lld clang -y

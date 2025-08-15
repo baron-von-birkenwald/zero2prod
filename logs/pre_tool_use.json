@@ -607,5 +607,17 @@
     "tool_input": {
       "file_path": "/home/baron-von-birken/workspace/zero2prod/Dockerfile"
     }
+  },
+  {
+    "session_id": "969a4d95-d454-4667-bfe7-991d3d65de35",
+    "transcript_path": "/home/baron-von-birken/.claude/projects/-home-baron-von-birken-workspace-zero2prod/969a4d95-d454-4667-bfe7-991d3d65de35.jsonl",
+    "cwd": "/home/baron-von-birken/workspace/zero2prod",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/home/baron-von-birken/workspace/zero2prod/Dockerfile",
+      "old_string": "FROM rustlang/rust:nightly",
+      "new_string": "FROM rust:1.83"
+    }
   }
 ]
