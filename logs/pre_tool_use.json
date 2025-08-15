@@ -1,0 +1,35 @@
+[
+  {
+    "session_id": "66b242a0-44ef-4b96-8c76-31c802dcfbde",
+    "transcript_path": "/home/baron-von-birken/.claude/projects/-home-baron-von-birken-workspace-zero2prod/66b242a0-44ef-4b96-8c76-31c802dcfbde.jsonl",
+    "cwd": "/home/baron-von-birken/workspace/zero2prod",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "docker ps -a --filter name=postgres --format \"table {{.Names}}\\t{{.Status}}\\t{{.ID}}\"",
+      "description": "Check status of existing postgres container"
+    }
+  },
+  {
+    "session_id": "66b242a0-44ef-4b96-8c76-31c802dcfbde",
+    "transcript_path": "/home/baron-von-birken/.claude/projects/-home-baron-von-birken-workspace-zero2prod/66b242a0-44ef-4b96-8c76-31c802dcfbde.jsonl",
+    "cwd": "/home/baron-von-birken/workspace/zero2prod",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "docker rm postgres",
+      "description": "Remove existing postgres container"
+    }
+  },
+  {
+    "session_id": "66b242a0-44ef-4b96-8c76-31c802dcfbde",
+    "transcript_path": "/home/baron-von-birken/.claude/projects/-home-baron-von-birken-workspace-zero2prod/66b242a0-44ef-4b96-8c76-31c802dcfbde.jsonl",
+    "cwd": "/home/baron-von-birken/workspace/zero2prod",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "docker run --env POSTGRES_USER=postgres --env POSTGRES_PASSWORD=password '--health-cmd=pg_isready -U postgres || exit 1' --health-interval=1s --health-timeout=5s --health-retries=5 --publish 5432:5432 --detach --name postgres postgres -N 1000",
+      "description": "Start new postgres container with health checks"
+    }
+  }
+]
