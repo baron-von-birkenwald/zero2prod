@@ -30,6 +30,7 @@ impl DatabaseSettings {
             .password(&self.password.expose_secret())
             .port(self.port)
             .database(&self.database_name)
+            .ssl_mode(ssl_mode)
     }
 }
 

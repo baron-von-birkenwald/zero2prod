@@ -25,3 +25,5 @@ impl SubscriberName {
         &self.0
     }
 }
+
+impl AsRef<str> for SubscriberName;
