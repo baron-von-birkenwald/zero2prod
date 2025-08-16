@@ -940,5 +940,16 @@
         }
       ]
     }
+  },
+  {
+    "session_id": "29359976-f0b8-4c55-846b-a6d689042d4e",
+    "transcript_path": "/home/baron-von-birken/.claude/projects/-home-baron-von-birken-workspace-zero2prod/29359976-f0b8-4c55-846b-a6d689042d4e.jsonl",
+    "cwd": "/home/baron-von-birken/workspace/zero2prod",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cargo update",
+      "description": "Update all crates to latest compatible versions"
+    }
   }
 ]
