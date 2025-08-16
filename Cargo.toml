@@ -13,6 +13,7 @@ reqwest = "0.12.22"
 tracing-actix-web = "0.7"
 tracing-bunyan-formatter = "0.3"
 tracing-log = "0.2"
+serde-aux = "4"
 
 [dependencies.secrecy]
 version = "0.8"
