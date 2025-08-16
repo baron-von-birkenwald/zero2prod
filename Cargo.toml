@@ -1,40 +1,69 @@
 [package]
 name = "zero2prod"
-version = "0.1.0"
 edition = "2024"
+version = "0.0.1"
 
-[lib]
-path = "src/lib.rs"
+[dependencies]
+actix-web = "4.11.0"
+chrono = "0.4.41"
+config = "0.14"
+env_logger = "0.11"
+log = "0.4"
+reqwest = "0.12.22"
+tracing-actix-web = "0.7"
+tracing-bunyan-formatter = "0.3"
+tracing-log = "0.2"
+
+[dependencies.secrecy]
+version = "0.8"
+features = ["serde"]
+
+[dependencies.serde]
+version = "1.0.219"
+features = ["derive"]
+
+[dependencies.sqlx]
+version = "0.8.6"
+features = ["runtime-tokio-rustls", "macros", "postgres", "uuid", "chrono", "migrate"]
+default-features = false
+
+[dependencies.tokio]
+version = "1.47.1"
+features = ["rt", "rt-multi-thread", "macros"]
+
+[dependencies.tracing]
+version = "0.1"
+features = ["log"]
+
+[dependencies.tracing-subscriber]
+version = "0.3"
+features = ["registry", "env-filter"]
+
+[dependencies.uuid]
+version = "1.18.0"
+features = ["v4"]
 
 [[bin]]
 path = "src/main.rs"
 name = "zero2prod"
+plugin = false
+proc-macro = false
+edition = "2024"
+required-features = []
 
-[dependencies]
-actix-web = "4.11.0"
-tokio = { version = "1.47.1", features = ["rt", "rt-multi-thread", "macros"] }
-reqwest = "0.12.22"
-serde = { version = "1.0.219", features = ["derive"] }
-config = "0.14"
-chrono = "0.4.41"
-uuid = { version = "1.18.0", features = ["v4"] }
-env_logger = "0.11"
-log = "0.4"
-tracing = { version = "0.1", features = ["log"] }
-tracing-subscriber = { version = "0.3", features = ["registry", "env-filter"] }
-tracing-bunyan-formatter = "0.3"
-tracing-log = "0.2"
-secrecy = { version = "0.8", features = ["serde"] }
-tracing-actix-web = "0.7"
+[[test]]
+path = "tests/health_check.rs"
+name = "health_check"
+plugin = false
+proc-macro = false
+edition = "2024"
+required-features = []
 
-[dependencies.sqlx]
-version = "0.8.6"
-default-features = false
-features = [
-"runtime-tokio-rustls",
-"macros",
-"postgres",
-"uuid",
-"chrono",
-"migrate"
-]
+[lib]
+path = "src/lib.rs"
+name = "zero2prod"
+plugin = false
+proc-macro = false
+edition = "2024"
+required-features = []
+crate-type = ["lib"]
