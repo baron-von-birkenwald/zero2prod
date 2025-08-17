@@ -1,0 +1,64 @@
+[
+  {
+    "session_id": "76dbd0d2-da92-48ec-a723-3a9ab85e273a",
+    "transcript_path": "/home/baron-von-birken/.claude/projects/-home-baron-von-birken-workspace-zero2prod-src-domain/76dbd0d2-da92-48ec-a723-3a9ab85e273a.jsonl",
+    "cwd": "/home/baron-von-birken/workspace/zero2prod/src/domain",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Investigate rand crate version mismatch",
+          "status": "in_progress",
+          "id": "1"
+        },
+        {
+          "content": "Fix the version conflict in Cargo.toml",
+          "status": "pending",
+          "id": "2"
+        },
+        {
+          "content": "Run tests to verify the fix",
+          "status": "pending",
+          "id": "3"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "76dbd0d2-da92-48ec-a723-3a9ab85e273a",
+    "transcript_path": "/home/baron-von-birken/.claude/projects/-home-baron-von-birken-workspace-zero2prod-src-domain/76dbd0d2-da92-48ec-a723-3a9ab85e273a.jsonl",
+    "cwd": "/home/baron-von-birken/workspace/zero2prod/src/domain",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/home/baron-von-birken/workspace/zero2prod/Cargo.toml"
+    }
+  },
+  {
+    "session_id": "76dbd0d2-da92-48ec-a723-3a9ab85e273a",
+    "transcript_path": "/home/baron-von-birken/.claude/projects/-home-baron-von-birken-workspace-zero2prod-src-domain/76dbd0d2-da92-48ec-a723-3a9ab85e273a.jsonl",
+    "cwd": "/home/baron-von-birken/workspace/zero2prod/src/domain",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Investigate rand crate version mismatch",
+          "status": "completed",
+          "id": "1"
+        },
+        {
+          "content": "Fix the version conflict in Cargo.toml",
+          "status": "in_progress",
+          "id": "2"
+        },
+        {
+          "content": "Run tests to verify the fix",
+          "status": "pending",
+          "id": "3"
+        }
+      ]
+    }
+  }
+]
