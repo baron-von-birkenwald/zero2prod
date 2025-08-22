@@ -64,9 +64,8 @@ edition = "2024"
 required-features = []
 
 [[test]]
-path = "tests/health_check.rs"
-name = "health_check"
-plugin = false
+path = "tests/api/main.rs"
+name = "api"
 proc-macro = false
 edition = "2024"
 required-features = []
